@@ -1,0 +1,59 @@
+<!--
+//Folder: Calculator_jQuery_Bootstrap
+//By : Karma Gurung
+//Date: July 20, 2020
+//Purpose: Create a javascript calculator using front-end libraries.
+//Note: Used Bootstrap and jQuery
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+    <h1><span class="label label-default">Simple Calculator</span></h1>
+    <table class="table table-dark table-bordereless ">
+        <tr>
+            <td><input class="btn btn-lg btn-secondary col-sm-2" id="clear" type="button" value="c" onclick="clr()"/> </td>
+            <td colspan="3"><input class="col-sm-10" id="display" type="text" value="" width="80%"/></td>
+        </tr>
+
+        <tr>
+            <td><input class="btn btn-lg btn-secondary" id="add" type="button" value="+" onclick="dis('+')"/> </td>
+            <td><input class="btn btn-lg btn-primary" id="one" type="button" value="1" onclick="dis(1)"/> </td>
+            <td><input class="btn btn-lg btn-primary" id="two" type="button" value="2" onclick="dis(2)"/> </td>
+            <td><input class="btn btn-lg btn-primary" id="three" type="button" value="3" onclick="dis(3)"/> </td>
+        </tr>
+
+        <tr>
+            <td><input class="btn btn-lg btn-secondary" id="subtract" type="button" value="-" onclick="dis('-')"/> </td>
+            <td><input class="btn btn-lg btn-primary" id="four" type="button" value="4" onclick="dis(4)"/> </td>
+            <td><input class="btn btn-lg btn-primary" id="five" type="button" value="5" onclick="dis(5)"/> </td>
+            <td><input class="btn btn-lg btn-primary" id="six" type="button" value="6" onclick="dis(6)"/> </td>
+        </tr>
+
+        <tr>
+            <td><input class="btn btn-lg btn-secondary" id="multiply" type="button" value="*" onclick="dis('*')"/> </td>
+            <td><input class="btn btn-lg btn-primary" id="seven" type="button" value="7" onclick="dis(7)"/> </td>
+            <td><input class="btn btn-lg btn-primary" id="eight" type="button" value="8" onclick="dis(8)"/> </td>
+            <td><input class="btn btn-lg btn-primary" id="nine" type="button" value="9" onclick="dis(9)"/> </td>
+        </tr>
+
+        <tr>
+            <td><input class="btn btn-lg btn-primary" id="divide" type="button" value="/" onclick="dis('/')"/> </td>
+            <td><input class="btn btn-lg btn-primary" id="decimal" type="button" value="." onclick="dis('.')"/> </td>
+            <td><input class="btn btn-lg btn-primary" id="zero" type="button" value="0" onclick="dis(0)"/> </td>
+            <td><input class="btn btn-lg btn-dark" id="equals" type="button" value="=" onclick="solve()"/> </td>
+        </tr>
+    </table>
+  
+    <script src="script.js"></script>
+</body>
+</html>
